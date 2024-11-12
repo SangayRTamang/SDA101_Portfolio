@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f0f0f0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #222;
+}
+
+.logo h1 a {
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+}
+
+.navbar li a {
+  color: #cfcfcf;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+
+.navbar li a:hover,
+.navbar li a.active {
+  background-color: #8cbeb2;
+}
+
+.portfolio {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.portfolio-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.project-card {
+  background-color: #f3b562;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: #333;
+  margin: 1rem 0;
+}
+
+.more-btn {
+  background-color: #8cbeb2;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.more-btn:hover {
+  background-color: #6ba6a2;
+}

@@ -1,0 +1,178 @@
+:root {
+  --bg-color-dark: #383838;
+  --bg-color-light: #f2ebbf;
+  --bg-color-accent: #f3b562;
+  --highlight-color: #8cbeb2;
+  --text-color-light: #ffffff;
+  --text-color-dark: #000000;
+  --font-primary: "Roboto Flex-Black", Helvetica, sans-serif;
+  --font-secondary: "Rosario", Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-secondary);
+  color: var(--text-color-dark);
+}
+
+.homepage {
+  background-color: var(--bg-color-dark);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.content-wrapper {
+  max-width: 1440px;
+  width: 100%;
+  background-color: var(--bg-color-dark);
+  position: relative;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.logo h1 {
+  font-size: 30px;
+  color: white;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+}
+
+.navbar li a {
+  color: var(--text-color-light);
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+
+.navbar li a:hover,
+.navbar li a.active {
+  background-color: var(--highlight-color);
+}
+
+/* Hero Section */
+.herobox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--bg-color-dark);
+  padding: 50px;
+  border-radius: 20px;
+  margin-top: 50px;
+}
+
+.text-wrapper {
+  font-family: var(--font-primary);
+  font-size: 64px;
+  font-weight: 900;
+  color: var(--text-color-light);
+  max-width: 600px;
+}
+
+.frame {
+  width: 400px;
+  height: 552px;
+  border-radius: 20px;
+  background-image: url(./imgs/me.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.pbutton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px 30px;
+  background-color: var(--highlight-color);
+  border-radius: 13px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* Section Styles */
+.section {
+  padding: 50px;
+  text-align: left;
+}
+
+.frame-3 {
+  width: 700px;
+  height: 400px;
+  background-color: #000000;
+  border-radius: 20px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.frame-3 video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.frame-5 {
+  width: 700px;
+  height: 400px;
+  background-color: #000000;
+  border-radius: 20px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.frame-5 video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.frame-8 {
+  width: 700px;
+  height: 400px;
+  background-color: #000000;
+  border-radius: 20px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.frame-8 video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.section-title {
+  font-family: "Roboto Slab-ExtraBold", Helvetica, sans-serif;
+  font-size: 48px;
+  color: #4d2424;
+}
+
+.section-content {
+  font-size: 24px;
+  color: var(--text-color-light);
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+/* Section Background Colors */
+.bg-light { background-color: var(--bg-color-light); }
+.bg-accent { background-color: var(--bg-color-accent); }
+.bg-alt { background-color: #877f5f; }

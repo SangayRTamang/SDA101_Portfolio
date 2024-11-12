@@ -30,7 +30,6 @@ body {
   position: relative;
 }
 
-/* Header */
 .header {
   display: flex;
   align-items: center;
@@ -65,7 +64,6 @@ body {
   background-color: var(--highlight-color);
 }
 
-/* Hero Section */
 .herobox {
   display: flex;
   align-items: center;
@@ -105,7 +103,6 @@ body {
   margin-top: 20px;
 }
 
-/* Section Styles */
 .section {
   padding: 50px;
   text-align: left;

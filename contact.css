@@ -4,13 +4,21 @@ body, html {
   font-family: Arial, sans-serif;
   background-color: #383838;
   color: #ffffff;
+  height: 100%;
+}
+
+.homepage {
+  display: flex;
+  flex-direction: column;
+  min-height: 200px;
 }
 
 .header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   padding: 20px;
+  background-color: #222;
 }
 
 .logo h1 a {
@@ -41,12 +49,20 @@ body, html {
   background-color: #8cbeb2;
 }
 
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
 .form-container {
   background-color: #f2ebbf;
   padding: 30px;
   border-radius: 10px;
-  position: relative;
   text-align: left;
+  max-width: 600px;
+  width: 100%;
 }
 
 .intro-text {
@@ -84,9 +100,5 @@ body, html {
   border: none;
   border-radius: 13px;
   cursor: pointer;
-}
-
-.footer-img {
-  margin-top: 20px;
-  width: 236px;
+  transition: 0.3s;
 }
